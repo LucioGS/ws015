@@ -1,0 +1,31 @@
+<?php include "vistas/cabecera.htm"; ?>
+
+<div class="container">
+	</br>
+  	<table class="table table-striped">
+		<tr><th>Título</th><th>Año</th><th>Tipo</th><th>Acciones</th></tr>
+		<?php foreach($un_array["Search"] as $film){ ?>
+			<tr>
+			<td><?php echo $film["Title"]; ?></td>
+			<td><?php echo $film["Year"]; ?></td>
+			<td><?php echo $film["Type"]; ?></td>
+			<td>
+				<a href='ficha.php?num_ficha=<?php echo $film["imdbID"]; ?>'><button class='btn btn-outline-success btn-sm'>Ficha</button></a>
+				<?php if($_SESSION["perfil"] == 2){ ?>
+					<a href='nuevo_preferido_proceso.php?num_ficha=<?php echo $film["imdbID"]; ?>&id_usuario=<?php echo $_SESSION["id"]; ?>'><button class='btn btn-outline-success btn-sm'>Me gusta</button></a>
+				<?php } ?>
+				<a href='nuevo_comentario.php?num_ficha=<?php echo $film["imdbID"]; ?>'><button class='btn btn-outline-success btn-sm'>Comentario</button></a>
+			</td>
+			</tr>
+		<?php } ?>
+
+	</table>
+	</br>
+	<p>	
+			&nbsp;&nbsp;<?php echo $un_array["totalResults"]; ?> registros encontrados
+	</p>	
+</div>
+
+<?php include "vistas/pie.htm"; ?>	
+	
+	

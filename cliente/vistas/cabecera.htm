@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tabla de datos</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
+  <div class="container-md">
+    <a class="navbar-brand" href="filtro.php">miweb.com</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="filtro.php">Buscador</a>
+        </li>	
+		<?php if($_SESSION["perfil"] == 1){ ?>
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Usuarios
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="usuarios.php">Listado</a></li>
+            <li><a class="dropdown-item" href="nuevo_usuario.php">Nuevo</a></li>
+          </ul>
+        </li>
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ranking
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="ranking_comentarios_por_usuario.php">Comentarios por usuario</a></li>
+			<li><a class="dropdown-item" href="ranking_comentarios_por_recurso.php">Comentarios por recurso</a></li>
+          </ul>
+        </li>
+		<?php } ?>
+      </ul>
+    </div>
+	<?php echo $_SESSION["nombre"]." ".$_SESSION["apellidos"]; ?>
+	&nbsp;&nbsp;(<?php echo perfil_un_usuario($_SESSION["perfil"]); ?>)
+	&nbsp;&nbsp;&nbsp;<a href='salir.php' style="text-decoration:none">SALIR</a>
+  </div>
+</nav>
+</br></br></br>

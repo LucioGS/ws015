@@ -1,0 +1,40 @@
+<?php include "vistas/cabecera.htm"; ?>
+
+<div class="container">
+	</br>
+	<form action="nuevo_usuario_proceso.php" method="post">
+	<div class="row">
+			<table id="la_tabla" class="table table-striped">
+					<tr><th>Nombre</th><td><input type="text" class="form-control" name="nombre"></td></tr>
+					<tr><th>Apellidos</th><td><input type="text" class="form-control" name="apellidos"></td></tr>
+					<tr><th>Teléfono</th><td><input type="text" class="form-control" name="telefono"></td></tr>
+					<tr><th>Email</th><td><input type="text" class="form-control" name="email"></td></tr>
+					<tr><th>Dirección</th><td><input type="text" class="form-control" name="direccion"></td></tr>
+					<tr><th>Localidad</th><td><input type="text" class="form-control" name="localidad"></td></tr>
+					<tr><th>User</th><td><input type="text" class="form-control" name="user"></td></tr>
+					<tr><th>Password</th><td><input type="text" class="form-control" name="password"></td></tr>
+					<tr><th>Perfil</th>
+						<td>
+							<select class="form-control" name="perfil">
+								<option></option>
+								<?php foreach ($perfiles as $perfil) { ?>
+									<option value='<?php echo $perfil["id"]; ?>'><?php echo $perfil["nombre"]; ?></option>
+								<?php } ?>
+							</select>
+						</td>
+					</tr>
+			</table>
+  	</div>
+	</br></br>
+	<button class="btn btn-outline-primary btn-lg" type="submit">Guardar</button>
+	</form>
+</div>
+
+<?php include "vistas/pie.htm"; ?>
+	
+	
+	
+
+
+	
+	

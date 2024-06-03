@@ -1,0 +1,6 @@
+- Estadísticas: comentarios por recurso
+
+
+
+
+

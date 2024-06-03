@@ -1,0 +1,30 @@
+
+<?php include "vistas/cabecera.htm"; ?>
+
+<div class="container">
+	</br>
+  	<table class="table table-striped">
+
+		<tr>
+			<th>Usuario</th>
+			<th>Nº de comentarios</th>
+		</tr>
+
+		<?php foreach($un_array as $usuario){ ?>
+			<tr>
+				<td><?php echo $usuario["el_nombre"]." ".$usuario["los_apellidos"]; ?></td>
+				<td><?php echo $usuario["cuenta"]; ?></td>
+			</tr>
+		<?php } ?>
+
+	</table>	
+</div>
+
+<?php include "vistas/pie.htm"; ?>
+	
+	
+	
+
+
+	
+	

@@ -1,0 +1,30 @@
+
+<?php include "vistas/cabecera.htm"; ?>
+
+<div class="container">
+	</br>
+  	<table class="table table-striped">
+
+		<tr>
+			<th>Recurso</th>
+			<th>Nº de comentarios</th>
+		</tr>
+
+		<?php foreach($resultado as $recurso){ ?>
+			<tr>
+				<td><?php echo $recurso["titulo"]; ?></td>
+				<td><?php echo $recurso["la_cuenta"]; ?></td>
+			</tr>
+		<?php } ?>
+
+	</table>	
+</div>
+
+<?php include "vistas/pie.htm"; ?>
+	
+	
+	
+
+
+	
+	

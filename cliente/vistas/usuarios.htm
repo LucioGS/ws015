@@ -1,0 +1,45 @@
+
+<?php include "vistas/cabecera.htm"; ?>
+
+<div class="container">
+	</br>
+  	<table class="table table-striped">
+
+		<tr>
+			<th>Nombre</th>
+			<th>Apellidos</th>
+			<th>Teléfono</th>
+			<th>Email</th>
+			<th>Dirección</th>
+			<th>Localidad</th>
+			<th>Acciones</th>
+		</tr>
+
+		<?php foreach($un_array as $usuario){ ?>
+			<tr>
+				<td><?php echo $usuario["nombre"]; ?></td>
+				<td><?php echo $usuario["apellidos"]; ?></td>
+				<td><?php echo $usuario["telefono"]; ?></td>
+				<td><?php echo $usuario["email"]; ?></td>
+				<td><?php echo $usuario["direccion"]; ?></td>
+				<td><?php echo $usuario["localidad"]; ?></td>
+				<td>
+					<a href='ficha_usuario.php?id_usuario=<?php echo $usuario["id"]; ?>'><button class='btn btn-outline-success btn-sm'>Ficha</button></a>
+					<a href='preferidos.php?id_usuario=<?php echo $usuario["id"]; ?>'><button class='btn btn-outline-success btn-sm'>Preferidos</button></a>
+					<a href='edita_usuario.php?id_usuario=<?php echo $usuario["id"]; ?>'><button class='btn btn-outline-success btn-sm'>Editar</button></a>
+					<a href='elimina_usuario.php?id_usuario=<?php echo $usuario["id"]; ?>' onclick='return confirm("¿Esta seguro?");'><button class='btn btn-outline-success btn-sm'>Eliminar</button></a>
+				</td>
+			</tr>
+		<?php } ?>
+
+	</table>	
+</div>
+
+<?php include "vistas/pie.htm"; ?>
+	
+	
+	
+
+
+	
+	

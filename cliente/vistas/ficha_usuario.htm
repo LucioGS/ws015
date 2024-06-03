@@ -1,0 +1,27 @@
+<?php include "vistas/cabecera.htm"; ?>
+
+<div class="container">
+	</br>
+	<div class="row">
+			<table id="la_tabla" class="table table-striped">
+					<tr><th>Nombre</th><td><?php echo $datos_usuario["nombre"]; ?></td></tr>
+					<tr><th>Apellidos</th><td><?php echo $datos_usuario["apellidos"]; ?></td></tr>
+					<tr><th>Teléfono</th><td><?php echo $datos_usuario["telefono"]; ?></td></tr>
+					<tr><th>Email</th><td><?php echo $datos_usuario["email"]; ?></td></tr>
+					<tr><th>Dirección</th><td><?php echo $datos_usuario["direccion"]; ?></td></tr>
+					<tr><th>Localidad</th><td><?php echo $datos_usuario["localidad"]; ?></td></tr>
+					<tr><th>User</th><td><?php echo $datos_usuario["user"]; ?></td></tr>
+					<tr><th>Password</th><td><?php echo $datos_usuario["password"]; ?></td></tr>
+					<tr><th>Perfil</th><td><?php echo perfil_un_usuario($datos_usuario["perfil"]); ?></td></tr>
+			</table>
+  	</div>	
+</div>
+
+<?php include "vistas/pie.htm"; ?>
+	
+	
+	
+
+
+	
+	

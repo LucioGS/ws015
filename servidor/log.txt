@@ -1,0 +1,63 @@
+Array
+(
+)
+2024-05-26 11:53:14  kkk
+2024-05-26 11:53:14  
+2024-05-26 12:02:31  acceso a datos de comentario de recurso 2
+2024-05-26 12:05:48  acceso a datos de comentario de recurso tt0112462
+2024-05-26 12:06:35  acceso a datos de comentario de recurso tt0112462
+2024-05-26 12:07:13  acceso a datos de comentario de recurso tt0112462
+2024-05-26 12:07:14  acceso a datos de comentario de recurso tt0112462
+2024-05-26 12:08:51  nuevo comentario creado
+2024-05-26 13:26:18  SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+2024-05-26 13:27:29  acceso a listado de usuarios
+2024-05-26 13:31:37  acceso a listado de usuarios
+2024-05-26 13:35:47  acceso a listado de usuarios
+2024-05-26 13:35:59  acceso a listado de usuarios
+2024-05-26 13:38:40  acceso a listado de usuarios
+2024-05-26 13:41:26  acceso a listado de usuarios
+2024-05-26 13:42:39  acceso a datos de usuario 2
+2024-05-26 13:44:24  acceso a datos de comentario de recurso tt0112462
+2024-05-26 13:45:43  acceso a datos de comentario de recurso tt0112462
+2024-05-26 13:47:18  acceso a datos de comentario de recurso tt0112462
+2024-05-26 13:49:34  SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_usuario' cannot be null
+2024-05-26 13:50:42  SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_usuario' cannot be null
+2024-05-26 13:52:29  SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_usuario' cannot be null
+2024-05-26 13:54:24  SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_usuario' cannot be null
+2024-05-26 13:54:37  SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_usuario' cannot be null
+2024-05-26 13:54:41  SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_usuario' cannot be null
+2024-05-26 13:55:26  SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_usuario' cannot be null
+2024-05-26 14:03:46  nuevo comentario creado
+2024-05-26 14:03:51  nuevo usuario creado
+2024-05-26 14:05:45  SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_usuario' cannot be null
+2024-05-26 14:06:19  acceso a listado de usuarios
+2024-05-26 14:06:28  nuevo usuario creado
+2024-05-26 14:22:28  nuevo usuario creado
+2024-05-26 14:24:28  nuevo comentario creado
+2024-05-26 14:26:31  usuario actualizado 21
+2024-05-26 14:27:21  usuario eliminado 21
+2024-05-26 22:07:57  login de usuario
+2024-05-26 22:09:42  login de usuario
+2024-05-26 22:10:28  404 Page not found
+2024-05-26 22:11:02  login de usuario
+2024-05-26 22:11:53  login de usuario
+2024-05-26 22:12:55  login de usuario
+2024-05-26 22:15:32  login de usuario
+2024-05-26 22:16:51  login de usuario
+2024-05-26 22:16:57  login de usuario
+2024-05-26 22:17:08  login de usuario
+2024-05-26 22:17:13  login de usuario
+2024-05-26 22:25:40  login de usuario
+2024-05-26 22:27:44  login de usuario
+2024-05-31 11:23:31  login de usuario
+2024-05-31 13:43:03  login de usuario
+2024-05-31 13:44:18  login de usuario
+2024-05-31 13:44:49  login de usuario
+2024-05-31 13:45:17  login de usuario
+2024-06-03 10:45:28  login de usuario
+2024-06-03 10:45:56  login de usuario
+2024-06-03 10:46:08  login de usuario
+2024-06-03 10:52:07  login de usuario
+2024-06-03 10:55:30  login de usuario
+2024-06-03 10:57:40  login de usuario
+2024-06-03 13:39:57  404 Page not found

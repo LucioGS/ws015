@@ -1,0 +1,59 @@
+<?php include "vistas/cabecera.htm"; ?>
+
+<div class="container">
+	</br>
+	<div class="row">
+    		<div class="col-sm-8">
+			<table id="la_tabla" class="table table-striped">
+					<tr><th>Título</th><td><?php echo $data_convertido["Title"]; ?></td></tr>
+					<tr><th>Elenco</th><td><?php echo $data_convertido["Actors"]; ?></td></tr>
+					<tr><th>Director</th><td><?php echo $data_convertido["Director"]; ?></td></tr>
+					<tr><th>Año</th><td><?php echo $data_convertido["Year"]; ?></td></tr>
+					<tr><th>Estreno</th><td><?php echo $data_convertido["Released"]; ?></td></tr>
+					<tr><th>Duración</th><td><?php echo $data_convertido["Runtime"]; ?></td></tr>
+					<tr><th>Guión</th><td><?php echo $data_convertido["Writer"]; ?></td></tr>
+					<tr><th>Sinopsis</th><td><?php echo $data_convertido["Plot"]; ?></td></tr>
+					<tr><th>Genero</th><td><?php echo $data_convertido["Genre"]; ?></td></tr>
+					<tr><th>País</th><td><?php echo $data_convertido["Country"]; ?></td></tr>
+					<tr><th>Clasificación</th><td><?php echo $data_convertido["Rated"]; ?></td></tr>
+					<tr><th>Premios</th><td><?php echo $data_convertido["Awards"]; ?></td></tr>
+					<tr><th>Puntuación Metacritic</th><td><?php echo $data_convertido["Metascore"]; ?></td></tr>
+					<tr><th>Puntuación IMDB</th><td><?php echo $data_convertido["imdbRating"]; ?></td></tr>
+					<tr><th>Recaudación</th><td><?php echo $data_convertido["BoxOffice"]; ?></td></tr>
+					<tr><th>Tipo</th><td><?php echo $data_convertido["Type"]; ?></td></tr>
+			</table>
+			</br></br>
+			<h5>Comentarios</h5>
+			</br>
+			<table id="la_tabla2" class="table table-striped">
+				<?php foreach($comentarios as $comentario){ ?>
+					<tr>
+						<td>
+							<strong><?php echo $comentario["el_nombre"]." ".$comentario["los_apellidos"]; ?></strong>
+							</br>
+							<?php echo $comentario["fechayhora"]; ?>
+						</td>
+						<td>
+							<?php echo $comentario["el_comentario"]; ?>
+							</br>
+						</td>
+					<tr>
+				<?php } ?>
+			</table>
+			
+			
+      		</div>
+		<div class="col-sm-4">
+			<img src='<?php echo $data_convertido["Poster"]; ?>' />
+		</div>
+  	</div>	
+</div>
+
+<?php include "vistas/pie.htm"; ?>
+	
+	
+	
+
+
+	
+	

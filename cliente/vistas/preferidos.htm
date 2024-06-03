@@ -1,0 +1,24 @@
+<?php include "vistas/cabecera.htm"; ?>
+
+<div class="container">
+	</br>
+  	<table class="table table-striped">
+		<tr><th>Título</th><th>Año</th><th>Tipo</th></tr>
+	<?php foreach($array_final as $recurso){ ?>			
+				<tr>
+				<td><?php echo $recurso["Title"]; ?></td>
+				<td><?php echo $recurso["Year"]; ?></td>
+				<td><?php echo $recurso["Type"]; ?></td>
+				</tr>
+	<?php } ?>
+	</table>	
+</div>
+
+<?php include "vistas/pie.htm"; ?>
+	
+	
+	
+
+
+	
+	

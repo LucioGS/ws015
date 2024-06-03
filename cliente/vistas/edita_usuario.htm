@@ -1,0 +1,41 @@
+<?php include "vistas/cabecera.htm"; ?>
+
+<div class="container">
+	</br>
+	<form action="edita_usuario_proceso.php" method="post">
+	<div class="row">
+			<table id="la_tabla" class="table table-striped">
+					<tr><th>Nombre</th><td><input type="text" class="form-control" name="nombre" value="<?php echo $datos_usuario["nombre"]; ?>"></td></tr>
+					<tr><th>Apellidos</th><td><input type="text" class="form-control" name="apellidos" value="<?php echo $datos_usuario["apellidos"]; ?>"></td></tr>
+					<tr><th>Teléfono</th><td><input type="text" class="form-control" name="telefono" value="<?php echo $datos_usuario["telefono"]; ?>"></td></tr>
+					<tr><th>Email</th><td><input type="text" class="form-control" name="email" value="<?php echo $datos_usuario["email"]; ?>"></td></tr>
+					<tr><th>Dirección</th><td><input type="text" class="form-control" name="direccion" value="<?php echo $datos_usuario["direccion"]; ?>"></td></tr>
+					<tr><th>Localidad</th><td><input type="text" class="form-control" name="localidad" value="<?php echo $datos_usuario["localidad"]; ?>"></td></tr>
+					<tr><th>User</th><td><input type="text" class="form-control" name="user" value="<?php echo $datos_usuario["user"]; ?>"></td></tr>
+					<tr><th>Password</th><td><input type="text" class="form-control" name="password" value="<?php echo $datos_usuario["password"]; ?>"></td></tr>
+					<tr><th>Perfil</th>
+						<td>
+							<select class="form-control" name="perfil">
+								<option></option>
+								<?php foreach ($perfiles as $perfil) { ?>
+									<option value='<?php echo $perfil["id"]; ?>' <?php if ($perfil["id"] == $datos_usuario["perfil"]){echo "selected";} ?>><?php echo $perfil["nombre"]; ?></option>
+								<?php } ?>
+							</select>
+						</td>
+					</tr>
+			</table>
+  	</div>
+	<input name="id" type="hidden" value="<?php echo $datos_usuario["id"]; ?>" />
+	</br></br>
+	<button class="btn btn-outline-primary btn-lg" type="submit">Guardar</button>
+	</form>
+</div>
+
+<?php include "vistas/pie.htm"; ?>
+	
+	
+	
+
+
+	
+	
